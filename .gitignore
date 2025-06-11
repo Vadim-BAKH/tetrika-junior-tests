@@ -130,11 +130,15 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.tet
+tet/
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+
+poetry.lock
 
 # Spyder project settings
 .spyderproject
