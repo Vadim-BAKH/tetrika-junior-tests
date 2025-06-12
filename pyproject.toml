@@ -1,0 +1,33 @@
+[project]
+name = "tetrika-junior-tests"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Vadim Bakhtiarov"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests (>=2.32.4,<3.0.0)",
+    "bs4 (>=0.0.2,<0.0.3)",
+    "lxml (>=5.4.0,<6.0.0)",
+    "aiohttp (>=3.12.12,<4.0.0)",
+    "aiofiles (>=24.1.0,<25.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.0"
+black = "^25.1.0"
+ruff = "^0.11.13"
+flake8 = "^7.2.0"
+pylint = "^3.3.7"
+pytest-asyncio = "^1.0.0"
+aioresponses = "^0.7.8"
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = ["W0613"]
